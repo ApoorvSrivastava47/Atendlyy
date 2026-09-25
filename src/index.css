@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-apple: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Plus Jakarta Sans', 'Inter', -apple-system-headline, system-ui, sans-serif;
+    --font-code: 'SF Mono', 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
+  }
+
+  html {
+    font-family: var(--font-apple);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: var(--font-apple);
+    background-color: #f7f7f5;
+    color: #0d0d0d;
+    letter-spacing: -0.015em;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Spacious Apple-inspired font utilities */
+  .font-sans, .font-apple {
+    font-family: var(--font-apple);
+    letter-spacing: -0.015em;
+  }
+
+  /* Map existing font-mono UI classes to the spacious Apple font */
+  .font-mono {
+    font-family: var(--font-apple);
+    letter-spacing: -0.012em;
+  }
+
+  /* Dedicated code/numbers monospace */
+  code, pre, kbd, .font-code, .roll-mono {
+    font-family: var(--font-code);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom Out-of-the-Box tactile neo-pop utilities */
+.neo-card {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-card-sm {
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.neo-btn {
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+/* Smooth gesture handling and hardware acceleration */
+.touch-none {
+  touch-action: none;
+  -webkit-touch-callout: none;
+}
+
+.will-change-transform {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}

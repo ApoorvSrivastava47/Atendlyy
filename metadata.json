@@ -1,0 +1,6 @@
+{
+  "name": "Atendly",
+  "description": "Streamlined college faculty platform featuring Tinder-style swipe attendance with Google Drive and Sheets cloud sync, assignment review, classroom maintenance tracking, and instant WhatsApp student messaging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
